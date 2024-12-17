@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_widgetkit/flutter_widgetkit.dart';
+import 'package:study_home_widget/data/constants.dart';
 import 'package:study_home_widget/data/widget_date.dart';
 
 class HomePage extends StatelessWidget {
@@ -29,9 +30,10 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 WidgetKit.setItem(
-                    'widgetData',
-                    jsonEncode(WidgetData(textController.text)),
-                    'group.flutterioswidget');
+                  'widgetData',
+                  jsonEncode(WidgetData(textController.text)),
+                  Constants.groupName,
+                );
                 WidgetKit.reloadAllTimelines();
               },
               child: const Text("Push to Widget"),
