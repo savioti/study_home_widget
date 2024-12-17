@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.ios_home_widget</string>
+		<string>group.jam.homewidget</string>
 	</array>
 </dict>
 </plist>
