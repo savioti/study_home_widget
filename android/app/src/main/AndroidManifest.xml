@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="study_home_widget"
+        android:label="learn_flutter_home_widget"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

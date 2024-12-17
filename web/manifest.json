@@ -1,6 +1,6 @@
 {
-    "name": "study_home_widget",
-    "short_name": "study_home_widget",
+    "name": "learn_flutter_home_widget",
+    "short_name": "learn_flutter_home_widget",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

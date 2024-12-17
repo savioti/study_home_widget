@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = study_home_widget
+PRODUCT_NAME = learn_flutter_home_widget
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.savioti.homewidget.studyHomeWidget
+PRODUCT_BUNDLE_IDENTIFIER = savioti.learnFlutterHomeWidget
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.savioti.homewidget. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 savioti. All rights reserved.
