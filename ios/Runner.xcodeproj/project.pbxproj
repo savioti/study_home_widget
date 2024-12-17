@@ -46,14 +46,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		32E6CA1D2D1170FD00731625 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 				32E6CA1C2D1170FD00731625 /* learn_flutter_home_widgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -226,7 +226,6 @@
 				EBE81657E89E41BFDF3C7B3D /* Pods-RunnerTests.release.xcconfig */,
 				212C2AB9C372DC896C514E56 /* Pods-RunnerTests.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
