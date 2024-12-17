@@ -1,4 +1,4 @@
-package com.savioti.homewidget.study_home_widget
+package com.savioti.homewidget
 
 import io.flutter.embedding.android.FlutterActivity
 
