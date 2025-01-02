@@ -7,7 +7,7 @@ struct Provider: TimelineProvider {
     let userDefaultsKey = "lastTimeStamp"
 
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "placeholder")
+        SimpleEntry(date: Date(), data: "placeholder")
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
@@ -16,9 +16,10 @@ struct Provider: TimelineProvider {
         print(storedValue ?? "No stored value")
 
         let now = Date()
-        let entryText = "set by swift " + now.toIso8601()
+        let entryText = "set by swift " + now.ISO8601Format()
         userDefaults?.set(entryText, forKey: userDefaultsKey)
-        let entry = SimpleEntry(date: now, emoji: entryText)
+        let entry = SimpleEntry(date: now, data: entryText)
+        print("updated timeline")
         completion(entry)
     }
 
@@ -28,11 +29,12 @@ struct Provider: TimelineProvider {
         print(storedValue ?? "No stored value")
 
         let now = Date()
-        let entryText = "set by swift " + now.toIso8601()
+        let entryText = "set by swift " + now.ISO8601Format()
         userDefaults?.set(entryText, forKey: userDefaultsKey)
-        let entry = SimpleEntry(date: now, emoji: entryText)
+        let entry = SimpleEntry(date: now, data: entryText)
+        print("updated timeline")
 
-        let timeline = Timeline(entries: [entry], policy: .atEnd)
+        let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
     }
 }
