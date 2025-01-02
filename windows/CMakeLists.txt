@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(learn_flutter_home_widget LANGUAGES CXX)
+project(study_flutter_push_notifications LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "learn_flutter_home_widget")
+set(BINARY_NAME "study_flutter_push_notifications")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

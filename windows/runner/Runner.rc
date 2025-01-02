@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "savioti" "\0"
-            VALUE "FileDescription", "learn_flutter_home_widget" "\0"
+            VALUE "CompanyName", "com.msavioti" "\0"
+            VALUE "FileDescription", "study_flutter_push_notifications" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "learn_flutter_home_widget" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 savioti. All rights reserved." "\0"
-            VALUE "OriginalFilename", "learn_flutter_home_widget.exe" "\0"
-            VALUE "ProductName", "learn_flutter_home_widget" "\0"
+            VALUE "InternalName", "study_flutter_push_notifications" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.msavioti. All rights reserved." "\0"
+            VALUE "OriginalFilename", "study_flutter_push_notifications.exe" "\0"
+            VALUE "ProductName", "study_flutter_push_notifications" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

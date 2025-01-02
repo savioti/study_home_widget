@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/learn_flutter_home_widget.iml" filepath="$PROJECT_DIR$/learn_flutter_home_widget.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/learn_flutter_home_widget_android.iml" filepath="$PROJECT_DIR$/android/learn_flutter_home_widget_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study_flutter_push_notifications.iml" filepath="$PROJECT_DIR$/study_flutter_push_notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/study_flutter_push_notifications_android.iml" filepath="$PROJECT_DIR$/android/study_flutter_push_notifications_android.iml" />
     </modules>
   </component>
 </project>

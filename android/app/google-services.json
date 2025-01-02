@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356383367208",
+    "project_id": "flutter-push-notificatio-6e5e7",
+    "storage_bucket": "flutter-push-notificatio-6e5e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356383367208:android:82094f8b95f073b64c551d",
+        "android_client_info": {
+          "package_name": "com.msavioti.study_flutter_push_notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356383367208-0pu32kpet68h72j32aggmdumi5oar3gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcxff4bLBheKuHc2vfyg1h2LVwT-QFRdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356383367208-0pu32kpet68h72j32aggmdumi5oar3gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
