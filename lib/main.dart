@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       await HomeWidget.saveWidgetData<String>(
         'lastTimeStamp',
-        date.toIso8601String(),
+        'set by flutter',
       );
 
       await HomeWidget.updateWidget(

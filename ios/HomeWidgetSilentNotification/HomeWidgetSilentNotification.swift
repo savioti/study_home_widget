@@ -1,12 +1,5 @@
-//
-//  HomeWidgetSilentNotification.swift
-//  HomeWidgetSilentNotification
-//
-//  Created by user253537 on 1/2/25.
-//
-
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 struct Provider: TimelineProvider {
     let groupId = "group.study.home_widget_silent_notification"
@@ -14,37 +7,42 @@ struct Provider: TimelineProvider {
     let userDefaultsKey = "lastTimeStamp"
 
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+        SimpleEntry(date: Date(), emoji: "placeholder")
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
+        let userDefaults = UserDefaults(suiteName: groupId)
+        let storedValue = userDefaults?.string(forKey: userDefaultsKey)
+        print(storedValue ?? "No stored value")
+
+        let now = Date()
+        let entryText = "set by swift " + now.toIso8601()
+        userDefaults?.set(entryText, forKey: userDefaultsKey)
+        let entry = SimpleEntry(date: now, emoji: entryText)
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        
-        var entries: [SimpleEntry] = []
+    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
+        let userDefaults = UserDefaults(suiteName: groupId)
+        let storedValue = userDefaults?.string(forKey: userDefaultsKey)
+        print(storedValue ?? "No stored value")
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
-            entries.append(entry)
-        }
+        let now = Date()
+        let entryText = "set by swift " + now.toIso8601()
+        userDefaults?.set(entryText, forKey: userDefaultsKey)
+        let entry = SimpleEntry(date: now, emoji: entryText)
 
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let timeline = Timeline(entries: [entry], policy: .atEnd)
         completion(timeline)
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let emoji: String
+    let data: String
 }
 
-struct HomeWidgetSilentNotificationEntryView : View {
+struct HomeWidgetSilentNotificationEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -53,7 +51,7 @@ struct HomeWidgetSilentNotificationEntryView : View {
             Text(entry.date, style: .time)
 
             Text("Emoji:")
-            Text(entry.emoji)
+            Text(entry.data)
         }
     }
 }
